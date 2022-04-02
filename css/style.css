@@ -1,0 +1,50 @@
+.logosize{
+    height: 50px;
+    width: 65px;
+}
+.navbargreenbackground{
+    background-color: lightgreen !important;
+}
+/*social media styles*/
+.socialmedia
+  {
+      text-align: center;
+      font-weight: lighter;
+      color: white;
+      width: 300px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .fa {  
+    padding: 20px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 10px;  
+    height: 10px;
+    border-radius: 5px;
+  }  
+  .fa-facebook {  
+    background: lightgreen !important; 
+    color:  #3B5998; 
+  }  
+  .fa-twitter {  
+    background: lightgreen !important;
+    color:  #3B5998; 
+  } 
+  .fa-google {  
+    background: lightgreen !important;
+    color:  #3B5998; 
+  }  
+  .fa:hover {  
+    opacity: 0.9;  
+}  
+.myMargin{
+  margin: 25px;
+}
+.centertext{
+    text-align: center;
+}
+.wper100{
+    width: 100%;
+}
+
