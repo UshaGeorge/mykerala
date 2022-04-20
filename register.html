@@ -53,7 +53,7 @@
           </div>
         </div>
     </nav>
-    <form action="#" class="login">
+    <form action="login.html" class="login" id="formvalidate">
         <div class="container-fluid explorebox " id="grad">
             <div class="row distinfo boxborder" style="padding-top: 20px;;padding-bottom: 60px;">
               <div class="col-md-3" ></div>
@@ -81,19 +81,29 @@
                   <div class="row registerdiv">
                     <div class="login-cont row">
                       <div class="col-md-3"><label>Email</label></div>
-                      <div class="col-md-3"><input type="email" placeholder="Enter Email" class="roundborder" required></div>
+                      <div class="col-md-3"><input type="text" id="txtEmail" placeholder="Enter Email" class="roundborder" required></div>
+                      <span id="emailValidator" style="color: red;display: none;" title="Please enter a valid EmilID" ></span>
                     </div>
                   </div>
                   <div class="row registerdiv">
                     <div class="login-cont row">
                       <div class="col-md-3"><label>Password</label></div>
-                      <div class="col-md-3"><input type="password" placeholder="Enter Password" class="roundborder" required></div>
+                      <div class="col-md-3"><input type="password" id="txtPwd" placeholder="Enter Password" class="roundborder" required></div>
+                      <span id="pwdValidator" style="color: red;display: none;" title="Please enter password" ></span>
                     </div>
                   </div>
                   <div class="row registerdiv">
                     <div class="login-cont row">
                       <div class="col-md-3"><label>Confirm Password</label></div>
-                      <div class="col-md-3"><input type="password" placeholder="Confirm Password" class="roundborder" required></div>
+                      <div class="col-md-3"><input type="password" id="txtPwd2" placeholder="Confirm Password" class="roundborder" required></div>
+                      <span id="pwd2Validator" style="color: red;display: none;" title="Please re-enter password" ></span>
+                    </div>
+                  </div>
+                  <div class="row registerdiv">
+                    <div class="login-cont row">
+                      <div class="col-md-3"><label>Phone</label></div>
+                      <div class="col-md-3"><input type="text" id="txtPhone" placeholder="Phone Number" class="roundborder" required maxlength="12"></div>
+                      <span id="phoneValidator" style="color: red;display: none;" title="Please re-enter password" ></span>
                     </div>
                   </div>
                   <div class="row registerdiv">
@@ -119,5 +129,6 @@
         </div>
         <p class="copyright">Kerala Tourism © 2022</p>
     </footer>
+    <script src="script/register.js"></script>
 </body>
 </html>
