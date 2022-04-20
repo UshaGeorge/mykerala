@@ -35,6 +35,7 @@ function validate(){
 
     var emailRegExp =   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var phoneRegExp = /^\d{3}[-. ]\d{3}[-. ]\d{4}$/;
+    var pwdRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
     
     // /^\d{3}-\d{3}-\d{4}$/;
 
@@ -44,6 +45,8 @@ function validate(){
     var isValidPhone = phoneRegExp.test(phoneNum);
     //console.log(isValidPhone);
 
+    var isValidPwd = pwdRegExp.test(pwd);
+
     if(!isValidEmail)
     {
         errEmail.innerText = "* Please enter a valid email id";
@@ -51,13 +54,14 @@ function validate(){
         isValid =false;
     }
 
-    if(pwd.trim() =='')
+    if(pwd.trim() =='' || !isValidPwd)
     {
-        errPwd.innerText = "* Please enter password";
+        errPwd.innerText = "*  Password should contain minimum 8 characters, at least one uppercase, and one lower case and at least one number. Allowed alphabets and numbers only";
         errPwd.style.display='block';
         isValid =false;
     }
 
+    
     if(pwd2.trim() =='')
     {
         errPwd2.innerText = "* Please confirm password";
